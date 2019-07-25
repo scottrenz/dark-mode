@@ -9,7 +9,7 @@ function useDarkMode () {
             bodyTag.classList.add('dark-mode')
             )}
             {darkValue && (
-                bodyTag.style = 'background-color: purple'
+                bodyTag.style = 'background-color: #4B0082'
                 )}
                 {!darkValue && (
                     bodyTag.style = 'background-color: white'

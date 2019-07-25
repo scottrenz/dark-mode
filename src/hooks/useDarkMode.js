@@ -7,8 +7,14 @@ function useDarkMode () {
         let bodyTag = document.querySelector('body');
         {darkValue && (
             bodyTag.classList.add('dark-mode')
-        )}
-        {!darkValue && (
+            )}
+            {darkValue && (
+                bodyTag.style = 'background-color: purple'
+                )}
+                {!darkValue && (
+                    bodyTag.style = 'background-color: white'
+                    )}
+                {!darkValue && (
             bodyTag.classList.remove('dark-mode')
         )}
             }, [darkValue]);
